@@ -1,17 +1,20 @@
 package com.farm.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@Entity
 public class Farmer {
 
+	@Id
 	private int id;
 	private String name;
 	private String mobileNumber;
@@ -27,8 +30,4 @@ public class Farmer {
 		this.farmingArea = farmingArea;
 		this.cropsRate = cropsRate;
 	}
-	
-	
-	
-
 }
