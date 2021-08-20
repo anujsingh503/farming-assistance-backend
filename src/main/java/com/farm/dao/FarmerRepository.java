@@ -6,4 +6,5 @@ import com.farm.model.Farmer;
 
 public interface FarmerRepository extends JpaRepository<Farmer, Integer>{
 
+	
 }
