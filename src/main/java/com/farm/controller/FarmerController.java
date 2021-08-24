@@ -10,14 +10,14 @@ import com.farm.services.FarmerServiceImpl;
 
 @RestController
 public class FarmerController {
-	
+
 	@Autowired
 	FarmerServiceImpl farmerServiceImpl;
-	
-	@PostMapping(value="/record",consumes ="application/json" )
-	public String dashboardRecord(@RequestBody Farmer farmer)
-	{
+
+	@PostMapping(value = "/record", consumes = "application/json")
+	public String dashboardRecord(@RequestBody Farmer farmer) {
 		farmerServiceImpl.saveData(farmer);
+
 		return "";
 	}
 
