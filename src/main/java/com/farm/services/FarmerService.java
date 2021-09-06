@@ -1,13 +1,9 @@
 package com.farm.services;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
-import com.farm.dao.FarmerRepository;
-import com.farm.model.Farmer;
+import com.farm.model.FarmerRegistation;
 
 public interface FarmerService {
 	
-	public String saveData(Farmer farmer);
+	public String saveFarmerRecord(FarmerRegistation farmingRegistation);
 
 }
-

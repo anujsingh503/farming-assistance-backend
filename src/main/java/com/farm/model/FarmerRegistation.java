@@ -7,27 +7,27 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Entity
-public class Farmer {
-
+public class FarmerRegistation { 
+	
 	@Id
 	private int id;
 	private String name;
+	private String password;
 	private String mobileNumber;
-	private String dddress;
-	private String farmingArea;
-	private String cropsRate;
+	private String address;
+	private String gender;
 	
-	public Farmer(String name, String mobileNumber, String dddress, String farmingArea, String cropsRate) {
+	public FarmerRegistation(String name, String password) {
 		super();
 		this.name = name;
-		this.mobileNumber = mobileNumber;
-		this.dddress = dddress;
-		this.farmingArea = farmingArea;
-		this.cropsRate = cropsRate;
+		this.password = password;
 	}
+	
+	
+	
+
 }
